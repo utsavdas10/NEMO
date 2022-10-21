@@ -1,11 +1,12 @@
 package com.example.nemo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+public class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         actionBarHide()
@@ -19,18 +20,24 @@ class MainActivity : AppCompatActivity() {
 
 
         rooms.setOnClickListener(){
-            TODO()
+            val intent = Intent(this, Rooms::class.java)
+            startActivity(intent)
         }
         door.setOnClickListener(){
-            TODO()
+            val intent = Intent(this, Door::class.java)
+            startActivity(intent)
         }
         garden.setOnClickListener(){
-            TODO()
+            val intent = Intent(this, Garden::class.java)
+            startActivity(intent)
         }
         waterTank.setOnClickListener(){
-            TODO()
+            val intent = Intent(this, WaterTank::class.java)
+            startActivity(intent)
         }
     }
+
+
 
 
 

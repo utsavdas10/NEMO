@@ -14,6 +14,18 @@
         android:theme="@style/Theme.NEMO"
         tools:targetApi="31">
         <activity
+            android:name=".WaterTank"
+            android:exported="false" />
+        <activity
+            android:name=".Garden"
+            android:exported="false" />
+        <activity
+            android:name=".Door"
+            android:exported="false" />
+        <activity
+            android:name=".Rooms"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
