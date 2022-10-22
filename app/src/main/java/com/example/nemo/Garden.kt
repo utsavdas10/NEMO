@@ -10,6 +10,7 @@ class Garden : AppCompatActivity() {
         actionBarHide()
         statusBarColour()
         setContentView(R.layout.activity_garden)
+
     }
 
 
