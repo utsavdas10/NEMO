@@ -1,8 +1,14 @@
 package com.example.nemo
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
 import android.view.Window
+import android.widget.ProgressBar
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.mikhaellopez.circularprogressbar.CircularProgressBar
+
 
 class Garden : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,6 +16,7 @@ class Garden : AppCompatActivity() {
         actionBarHide()
         statusBarColour()
         setContentView(R.layout.activity_garden)
+
     }
 
 
