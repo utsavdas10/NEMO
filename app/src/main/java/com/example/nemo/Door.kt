@@ -1,5 +1,6 @@
 package com.example.nemo
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.Window
@@ -11,11 +12,13 @@ import androidx.appcompat.app.AppCompatActivity
 
 class Door : AppCompatActivity() {
     private var vView: VideoView? = null
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         actionBarHide()
         statusBarColour()
         setContentView(R.layout.activity_door)
+
         val vView = findViewById<VideoView>(R.id.videoView)
         vView.setVideoPath("android.resource://" + packageName + "/" + R.raw.clip)
         val mediaController = MediaController(this)
@@ -23,9 +26,8 @@ class Door : AppCompatActivity() {
         mediaController.setAnchorView(vView)
         val dButton : Button = findViewById<Button>(R.id.dButton)
 
-        dButton.setOnTouchListener { v, event ->
-            val action = event.action
-            when(action){
+        dButton.setOnTouchListener { _, event ->
+            when(event.action){
 
                 MotionEvent.ACTION_DOWN -> {
                     vView?.start()
@@ -36,10 +38,7 @@ class Door : AppCompatActivity() {
             }
             true
         }
-
     }
-
-
 
 
     private fun statusBarColour() {
