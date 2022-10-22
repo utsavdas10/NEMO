@@ -24,13 +24,15 @@ class Door : AppCompatActivity() {
         val mediaController = MediaController(this)
         vView.setMediaController(mediaController)
         mediaController.setAnchorView(vView)
+        vView?.start()
         val dButton : Button = findViewById<Button>(R.id.dButton)
 
-        dButton.setOnTouchListener { _, event ->
-            when(event.action){
+        dButton.setOnTouchListener { v, event ->
+            val action = event.action
+            when(action){
 
                 MotionEvent.ACTION_DOWN -> {
-                    vView?.start()
+                    #TODO
                 }
                 MotionEvent.ACTION_UP -> {
                     vView.stopPlayback()
