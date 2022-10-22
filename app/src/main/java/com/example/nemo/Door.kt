@@ -32,7 +32,7 @@ class Door : AppCompatActivity() {
             when(action){
 
                 MotionEvent.ACTION_DOWN -> {
-                    #TODO
+                    //TODO
                 }
                 MotionEvent.ACTION_UP -> {
                     vView.stopPlayback()
