@@ -14,7 +14,7 @@ class Rooms : AppCompatActivity() {
         setContentView(R.layout.activity_rooms)
 
         val gaugeText : TextView = findViewById<TextView>(R.id.gaugeText)
-        gaugeText.setText("65")
+        gaugeText.text = "65"
         val circularProgressBar = findViewById<CircularProgressBar>(R.id.Gauge1)
         circularProgressBar.apply {
             // with animation

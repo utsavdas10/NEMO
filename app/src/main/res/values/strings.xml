@@ -3,4 +3,5 @@
     <string name="waterLevel">LEVEL</string>
     <string name="OnOff">ON</string>
     <string name="currlevel">0</string>
+    <string name="gText">GARDEN WATERING</string>
 </resources>
