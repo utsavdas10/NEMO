@@ -21,7 +21,7 @@ class Door : AppCompatActivity() {
         val mediaController = MediaController(this)
         vView.setMediaController(mediaController)
         mediaController.setAnchorView(vView)
-        val dButton : Button = findViewById<Button>(R.id.WaterButton)
+        val dButton : Button = findViewById<Button>(R.id.dButton)
 
         dButton.setOnTouchListener { v, event ->
             val action = event.action
