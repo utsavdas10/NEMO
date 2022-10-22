@@ -45,6 +45,8 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/OnOff"
         android:textSize="24sp"
+        android:elevation="20dp"
+        app:cornerRadius="15dp"
         android:textStyle="bold"
         app:iconTint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"

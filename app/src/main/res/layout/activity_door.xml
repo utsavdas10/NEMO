@@ -23,6 +23,8 @@
         android:layout_height="71dp"
         android:backgroundTint="@color/teal_200"
         android:text="@string/OnOff"
+        android:elevation="20dp"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

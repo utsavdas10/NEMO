@@ -5,7 +5,6 @@ import android.view.MotionEvent
 import android.view.Window
 import android.widget.Button
 import android.widget.MediaController
-import android.widget.Toast
 import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -21,17 +20,22 @@ class Door : AppCompatActivity() {
         val mediaController = MediaController(this)
         vView.setMediaController(mediaController)
         mediaController.setAnchorView(vView)
-        val dButton : Button = findViewById<Button>(R.id.WaterButton)
+        vView?.start()
+        val dButton : Button = findViewById<Button>(R.id.dButton)
+        dButton.alpha = 0f
+        dButton.animate().alpha(1f).duration = 1500;
+        dButton.translationY = 50F
+        dButton.animate().alpha(1f).translationYBy(-50F).duration = 1500
 
         dButton.setOnTouchListener { v, event ->
             val action = event.action
             when(action){
 
                 MotionEvent.ACTION_DOWN -> {
-                    vView?.start()
+                    //ToDo
                 }
                 MotionEvent.ACTION_UP -> {
-                    vView.stopPlayback()
+                    //vView.stopPlayback()
                 }
             }
             true
