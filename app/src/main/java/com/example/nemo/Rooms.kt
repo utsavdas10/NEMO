@@ -1,8 +1,11 @@
 package com.example.nemo
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+import android.view.View
 import android.view.Window
+import androidx.appcompat.app.AppCompatActivity
+
 
 class Rooms : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,9 +13,8 @@ class Rooms : AppCompatActivity() {
         statusBarColour()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rooms)
+
     }
-
-
 
     private fun statusBarColour() {
         window.statusBarColor = resources.getColor(R.color.bg)
