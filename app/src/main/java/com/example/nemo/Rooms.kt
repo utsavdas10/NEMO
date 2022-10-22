@@ -3,6 +3,8 @@ package com.example.nemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
+import android.widget.TextView
+import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
 class Rooms : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,6 +12,17 @@ class Rooms : AppCompatActivity() {
         statusBarColour()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rooms)
+
+        val gaugeText : TextView = findViewById<TextView>(R.id.gaugeText)
+        gaugeText.setText("65")
+        val circularProgressBar = findViewById<CircularProgressBar>(R.id.Gauge1)
+        circularProgressBar.apply {
+            // with animation
+            setProgressWithAnimation(65f, 5000)// =1s
+
+            // Set Progress Max
+            progressMax = 100f
+        }
     }
 
 
