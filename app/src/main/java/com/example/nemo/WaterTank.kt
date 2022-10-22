@@ -25,7 +25,7 @@ class WaterTank : AppCompatActivity() {
         wButton.alpha = 0f
         wButton.animate().alpha(1f).duration = 1500;
         wButton.translationY = 50F
-        wButton.animate().alpha(1f).translationYBy(-50F).duration = 1500
+        wButton.animate().alpha(1f).translationYBy(-50F).duration = 1000
 
         wButton.setOnClickListener {
             if(wButton.text =="ON"){

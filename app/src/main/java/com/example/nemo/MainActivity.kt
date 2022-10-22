@@ -21,22 +21,22 @@ public class MainActivity : AppCompatActivity() {
         rooms.alpha = 0f
         rooms.animate().alpha(1f).duration = 1500;
         rooms.translationY = 50F
-        rooms.animate().alpha(1f).translationYBy(-50F).duration = 1500
+        rooms.animate().alpha(1f).translationYBy(-50F).duration = 1000
 
         door.alpha = 0f
         door.animate().alpha(1f).duration = 1500;
         door.translationY = 50F
-        door.animate().alpha(1f).translationYBy(-50F).duration = 1500
+        door.animate().alpha(1f).translationYBy(-50F).duration = 1000
 
         garden.alpha = 0f
         garden.animate().alpha(1f).duration = 1500;
         garden.translationY = 50F
-        garden.animate().alpha(1f).translationYBy(-50F).duration = 1500
+        garden.animate().alpha(1f).translationYBy(-50F).duration = 1000
 
         waterTank.alpha = 0f
         waterTank.animate().alpha(1f).duration = 1500;
         waterTank.translationY = 50F
-        waterTank.animate().alpha(1f).translationYBy(-50F).duration = 1500
+        waterTank.animate().alpha(1f).translationYBy(-50F).duration = 1000
 
         rooms.setOnClickListener(){
             val intent = Intent(this, Rooms::class.java)
