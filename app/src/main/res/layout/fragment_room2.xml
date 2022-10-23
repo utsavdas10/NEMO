@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/room2gauge1Text1"
@@ -70,7 +70,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/Room2Gauge1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/room2gauge2Text1"
@@ -116,10 +116,12 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewRoom2"
-                android:layout_width="372dp"
-                android:layout_height="431dp"
+                android:layout_width="334dp"
+                android:layout_height="404dp"
 
                 android:layout_margin="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
                 android:background="#032B30"
                 android:backgroundTint="#032B30"
@@ -140,8 +142,8 @@
 
                         <Switch
                             android:id="@+id/switch1_2"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="94dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 1"
@@ -156,8 +158,8 @@
 
                         <Switch
                             android:id="@+id/switch2_2"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="154dp"
+                            android:layout_height="75dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 2"
@@ -182,8 +184,8 @@
 
                         <Switch
                             android:id="@+id/switch3_2"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 3"
@@ -198,8 +200,8 @@
 
                         <Switch
                             android:id="@+id/switch4_2"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="157dp"
+                            android:layout_height="61dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 4"
@@ -245,7 +247,7 @@
 
             <Button
                 android:id="@+id/AC2"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:layout_marginTop="30dp"
@@ -255,7 +257,7 @@
 
             <Button
                 android:id="@+id/Heater2"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
@@ -264,7 +266,7 @@
 
             <Button
                 android:id="@+id/Humidifier22"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
@@ -273,7 +275,7 @@
 
             <Button
                 android:id="@+id/Dehumidifier2"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"

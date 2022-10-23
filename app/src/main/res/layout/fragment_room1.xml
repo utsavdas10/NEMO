@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/room1gauge1Text1"
@@ -70,7 +70,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/Room1Gauge1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/room1gauge2Text1"
@@ -142,8 +142,8 @@
 
                         <Switch
                             android:id="@+id/switch1_1"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="94dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 1"
@@ -158,8 +158,8 @@
 
                         <Switch
                             android:id="@+id/switch2_1"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="154dp"
+                            android:layout_height="75dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 2"
@@ -184,8 +184,8 @@
 
                         <Switch
                             android:id="@+id/switch3_1"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 3"
@@ -200,8 +200,8 @@
 
                         <Switch
                             android:id="@+id/switch4_1"
-                            android:layout_width="169dp"
-                            android:layout_height="108dp"
+                            android:layout_width="157dp"
+                            android:layout_height="61dp"
                             android:layout_margin="10dp"
                             android:scrollbarThumbVertical="@color/teal_200"
                             android:text=" Switch 4"
@@ -247,7 +247,7 @@
 
             <Button
                 android:id="@+id/AC1"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:layout_marginTop="30dp"
@@ -257,7 +257,7 @@
 
             <Button
                 android:id="@+id/Heater1"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
@@ -266,7 +266,7 @@
 
             <Button
                 android:id="@+id/Humidifier1"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
@@ -275,7 +275,7 @@
 
             <Button
                 android:id="@+id/Dehumidifier1"
-                android:layout_width="match_parent"
+                android:layout_width="345dp"
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
