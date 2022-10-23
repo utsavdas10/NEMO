@@ -39,7 +39,7 @@ class Door : AppCompatActivity() {
                     //TODO
                 }
                 MotionEvent.ACTION_UP -> {
-                    vView.stopPlayback()
+                    //vView.stopPlayback()
                 }
             }
             true
