@@ -2,73 +2,124 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/material_dynamic_neutral10"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/rooms"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/teal_200"
-        android:elevation="20dp"
-        android:text="Rooms"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.cardview.widget.CardView
+        android:layout_width="337dp"
+        android:layout_height="128dp"
+        app:cardBackgroundColor="#032B30"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/door"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/teal_200"
-        android:elevation="20dp"
-        android:text="Main Door"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/garden"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/teal_200"
-        android:elevation="20dp"
-        android:text="Garden"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+            <TextView
+                android:id="@+id/Heading"
+                android:layout_width="178dp"
+                android:layout_height="72dp"
+                android:fontFamily="@font/changa_one"
+                android:text="@string/Heading"
+                android:textColor="#F4E7E7"
+                android:textSize="60sp"
+                android:fadingEdge="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.553"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/waterTank"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/teal_200"
-        android:elevation="20dp"
-        android:text="Water Tank"
-        app:cornerRadius="15dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="361dp"
+        android:layout_height="474dp"
+        app:cardBackgroundColor="#032B30"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        app:cardPreventCornerOverlap="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.924">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#032B30">
+
+            <Button
+                android:id="@+id/rooms"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="20dp"
+                android:text="Rooms"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/door"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="20dp"
+                android:text="Main Door"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/garden"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rooms"
+                app:layout_constraintVertical_bias="0.195" />
+
+            <Button
+                android:id="@+id/garden"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="20dp"
+                android:text="Garden"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/waterTank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/door" />
+
+            <Button
+                android:id="@+id/waterTank"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:elevation="20dp"
+                android:text="Water Tank"
+                app:cornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
