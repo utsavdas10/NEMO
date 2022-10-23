@@ -23,8 +23,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="355dp"
-        android:layout_height="291dp"
+        android:layout_width="322dp"
+        android:layout_height="271dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="35dp"
         android:layout_marginRight="20dp"
@@ -294,6 +294,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/gButton"
         app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.401" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
