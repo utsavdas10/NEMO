@@ -3,10 +3,9 @@
     <string name="waterLevel">LEVEL</string>
     <string name="OnOff">ON</string>
     <string name="currlevel">0</string>
-<<<<<<< HEAD
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-=======
     <string name="gText">GARDEN WATERING</string>
->>>>>>> 8ed005b98ef4c2be55dba63084ce32c0534f79bb
+
 </resources>

@@ -23,7 +23,7 @@ class Rooms : AppCompatActivity() {
 //            // Set Progress Max
 //            progressMax = 100f
 //        }
-        
+
     }
 
 
