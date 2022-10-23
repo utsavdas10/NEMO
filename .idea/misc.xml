@@ -6,7 +6,7 @@
         <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/drawable/circular_progress_bar.xml" value="0.1" />
         <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/drawable/circular_shape.xml" value="0.1" />
         <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/layout/activity_door.xml" value="0.18229166666666666" />
-        <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/layout/activity_garden.xml" value="0.2" />
+        <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/layout/activity_garden.xml" value="0.22" />
         <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/layout/activity_rooms.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/deyah/Desktop/NEMO/app/src/main/res/layout/activity_water_tank.xml" value="0.22" />
@@ -15,7 +15,8 @@
         <entry key="..\:/Users/utsav/Desktop/Desktop2/App Dev/NEMO/app/src/main/res/layout/activity_main.xml" value="0.1578125" />
         <entry key="..\:/Users/utsav/Desktop/Desktop2/App Dev/NEMO/app/src/main/res/layout/activity_rooms.xml" value="0.1578125" />
         <entry key="..\:/Users/utsav/Desktop/Desktop2/App Dev/NEMO/app/src/main/res/layout/activity_water_tank.xml" value="0.1578125" />
-        <entry key="..\:/Users/utsav/Desktop/Desktop2/App Dev/NEMO/app/src/main/res/layout/fragment_room1.xml" value="0.1578125" />
+        <entry key="..\:/Users/utsav/Desktop/Desktop2/App Dev/NEMO/app/src/main/res/layout/fragment_room1.xml" value="0.1" />
+        <entry key="..\:/Users/utsav/Desktop/Desktop2/App Dev/NEMO/app/src/main/res/layout/fragment_room2.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -1,14 +1,286 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.Room1">
+    android:background="@color/bg"
+    tools:context=".Rooms">
 
-    <!-- TODO: Update blank fragment layout -->
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/Room1Gauge1"
+        android:layout_width="166dp"
+        android:layout_height="173dp"
+        android:layout_marginEnd="11dp"
+        app:cpb_background_progressbar_color="#D2486C7A"
+        app:cpb_background_progressbar_width="32dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#FF03DAC5"
+        app:cpb_progressbar_width="20dp"
+        app:cpb_round_border="true"
+        app:cpb_start_angle="215"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Room1Gauge2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/room1gauge1Text1"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Room1Gauge1"
+        app:layout_constraintEnd_toEndOf="@+id/Room1Gauge1"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/Room1Gauge1"
+        app:layout_constraintTop_toTopOf="@+id/Room1Gauge1"
+        app:layout_constraintVertical_bias="0.595" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/room1gauge1Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUMIDITY"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Room1Gauge1"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/Room1Gauge1"
+        app:layout_constraintTop_toBottomOf="@+id/Room1Gauge1"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/Room1Gauge2"
+        android:layout_width="166dp"
+        android:layout_height="176dp"
+        app:cpb_background_progressbar_color="#D2486C7A"
+        app:cpb_background_progressbar_width="32dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#FF03DAC5"
+        app:cpb_progressbar_width="20dp"
+        app:cpb_round_border="true"
+        app:cpb_start_angle="215"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/Room1Gauge1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/room1gauge2Text1"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Room1Gauge2"
+        app:layout_constraintEnd_toEndOf="@+id/Room1Gauge2"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/Room1Gauge2"
+        app:layout_constraintTop_toTopOf="@+id/Room1Gauge2"
+        app:layout_constraintVertical_bias="0.595" />
+
+    <TextView
+        android:id="@+id/room1gauge2Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUMIDITY"
+        android:textColor="@color/teal_200"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Room1Gauge2"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/Room1Gauge2"
+        app:layout_constraintTop_toBottomOf="@+id/Room1Gauge2"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="453dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewRoom1"
+                android:layout_width="372dp"
+                android:layout_height="431dp"
+
+                android:layout_margin="15dp"
+                android:layout_marginBottom="30dp"
+                android:background="#032B30"
+                android:backgroundTint="#032B30"
+                app:cardCornerRadius="18dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch1_1"
+                            android:layout_width="169dp"
+                            android:layout_height="108dp"
+                            android:layout_margin="10dp"
+                            android:scrollbarThumbVertical="@color/teal_200"
+                            android:text=" Switch 1"
+                            android:textColor="@color/teal_200"
+                            android:textSize="24sp"
+                            android:thumbTint="@color/teal_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.067"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Switch
+                            android:id="@+id/switch2_1"
+                            android:layout_width="169dp"
+                            android:layout_height="108dp"
+                            android:layout_margin="10dp"
+                            android:scrollbarThumbVertical="@color/teal_200"
+                            android:text=" Switch 2"
+                            android:textColor="@color/teal_200"
+                            android:textSize="24sp"
+                            android:thumbTint="@color/teal_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.101"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch3_1"
+                            android:layout_width="169dp"
+                            android:layout_height="108dp"
+                            android:layout_margin="10dp"
+                            android:scrollbarThumbVertical="@color/teal_200"
+                            android:text=" Switch 3"
+                            android:textColor="@color/teal_200"
+                            android:textSize="24sp"
+                            android:thumbTint="@color/teal_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.067"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Switch
+                            android:id="@+id/switch4_1"
+                            android:layout_width="169dp"
+                            android:layout_height="108dp"
+                            android:layout_margin="10dp"
+                            android:scrollbarThumbVertical="@color/teal_200"
+                            android:text=" Switch 4"
+                            android:textColor="@color/teal_200"
+                            android:textSize="24sp"
+                            android:thumbTint="@color/teal_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.101"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch5_1"
+                            android:layout_width="169dp"
+                            android:layout_height="108dp"
+                            android:layout_margin="10dp"
+                            android:scrollbarThumbVertical="@color/teal_200"
+                            android:text=" Switch 5"
+                            android:textColor="@color/teal_200"
+                            android:textSize="24sp"
+                            android:thumbTint="@color/teal_200"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.101"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/AC1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:text="ON"
+                app:cornerRadius="25dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/Heater1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="ON"
+                app:cornerRadius="25dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/Humidifier1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="ON"
+                app:cornerRadius="20dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/Dehumidifier1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:text="ON"
+                app:cornerRadius="25dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
