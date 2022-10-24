@@ -23,12 +23,15 @@ class Room1 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val room1gauge1text2 :TextView = view.findViewById(R.id.room1gauge1Text2) as TextView
+        val room1gauge2text2 :TextView = view.findViewById(R.id.room1gauge2Text2) as TextView
+
         val room1gauge1text1: TextView = view.findViewById(R.id.room1gauge1Text1) as TextView
         room1gauge1text1.text = "65"
         val room1gauge1 = view.findViewById<CircularProgressBar>(R.id.Room1Gauge1)
         room1gauge1.apply {
             // with animation
-            setProgressWithAnimation(65f, 5000)// =1s
+            setProgressWithAnimation(65f, 4000)// =1s
 
             // Set Progress Max
             progressMax = 100f
@@ -39,10 +42,30 @@ class Room1 : Fragment() {
         val room1gauge2 = view.findViewById<CircularProgressBar>(R.id.Room1Gauge2)
         room1gauge2.apply {
             // with animation
-            setProgressWithAnimation(32f, 5000)// =1s
+            setProgressWithAnimation(32f, 4000)// =1s
 
             // Set Progress Max
             progressMax = 100f
         }
+
+        room1gauge1text1.alpha = 0f
+        room1gauge1text1.animate().alpha(1f).duration = 3000;
+        room1gauge1text1.translationY = -120F
+        room1gauge1text1.animate().alpha(1f).translationYBy(120F).duration = 1800
+
+        room1gauge1text2.alpha = 0f
+        room1gauge1text2.animate().alpha(1f).duration = 3000;
+        room1gauge1text2.translationY = 120F
+        room1gauge1text2.animate().alpha(1f).translationYBy(-120F).duration = 1800
+
+        room1gauge2text1.alpha = 0f
+        room1gauge2text1.animate().alpha(1f).duration = 3000;
+        room1gauge2text1.translationY = -120F
+        room1gauge2text1.animate().alpha(1f).translationYBy(120F).duration = 1800
+
+        room1gauge2text2.alpha = 0f
+        room1gauge2text2.animate().alpha(1f).duration = 3000;
+        room1gauge2text2.translationY = 120F
+        room1gauge2text2.animate().alpha(1f).translationYBy(-120F).duration = 1800
     }
 }

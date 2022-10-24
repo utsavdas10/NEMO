@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Button
+import android.widget.TextView
 
 public class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +14,21 @@ public class MainActivity : AppCompatActivity() {
         statusBarColour()
         setContentView(R.layout.activity_main)
 
+        val heading : TextView = findViewById(R.id.Heading)
         val rooms : Button = findViewById<Button>(R.id.rooms)
         val door : Button = findViewById<Button>(R.id.door)
         val garden : Button = findViewById<Button>(R.id.garden)
         val waterTank : Button= findViewById<Button>(R.id.waterTank)
+
+        heading.alpha = 0f
+        heading.animate().alpha(1f).duration = 1500;
+        heading.translationY = -150F
+        heading.animate().alpha(1f).translationYBy(150F).duration = 1500
+
+        heading.animate().apply {
+            duration = 3000
+            rotationYBy(360f)
+        }.start()
 
         rooms.alpha = 0f
         rooms.animate().alpha(1f).duration = 1500;
