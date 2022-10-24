@@ -49,22 +49,22 @@ class Room1 : Fragment() {
         }
 
         room1gauge1text1.alpha = 0f
-        room1gauge1text1.animate().alpha(1f).duration = 3000;
+        room1gauge1text1.animate().alpha(1f).duration = 2000;
         room1gauge1text1.translationY = -120F
         room1gauge1text1.animate().alpha(1f).translationYBy(120F).duration = 1800
 
         room1gauge1text2.alpha = 0f
-        room1gauge1text2.animate().alpha(1f).duration = 3000;
+        room1gauge1text2.animate().alpha(1f).duration = 2000;
         room1gauge1text2.translationY = 120F
         room1gauge1text2.animate().alpha(1f).translationYBy(-120F).duration = 1800
 
         room1gauge2text1.alpha = 0f
-        room1gauge2text1.animate().alpha(1f).duration = 3000;
+        room1gauge2text1.animate().alpha(1f).duration = 2000;
         room1gauge2text1.translationY = -120F
         room1gauge2text1.animate().alpha(1f).translationYBy(120F).duration = 1800
 
         room1gauge2text2.alpha = 0f
-        room1gauge2text2.animate().alpha(1f).duration = 3000;
+        room1gauge2text2.animate().alpha(1f).duration = 2000;
         room1gauge2text2.translationY = 120F
         room1gauge2text2.animate().alpha(1f).translationYBy(-120F).duration = 1800
     }

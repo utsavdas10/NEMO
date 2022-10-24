@@ -22,8 +22,8 @@ public class MainActivity : AppCompatActivity() {
 
         heading.alpha = 0f
         heading.animate().alpha(1f).duration = 1500;
-        heading.translationY = -150F
-        heading.animate().alpha(1f).translationYBy(150F).duration = 1500
+        heading.translationX = -150F
+        heading.animate().alpha(1f).translationXBy(150F).duration = 1000
 
         rooms.alpha = 0f
         rooms.animate().alpha(1f).duration = 1500;
