@@ -25,11 +25,6 @@ public class MainActivity : AppCompatActivity() {
         heading.translationY = -150F
         heading.animate().alpha(1f).translationYBy(150F).duration = 1500
 
-        heading.animate().apply {
-            duration = 3000
-            rotationYBy(360f)
-        }.start()
-
         rooms.alpha = 0f
         rooms.animate().alpha(1f).duration = 1500;
         rooms.translationY = 50F
