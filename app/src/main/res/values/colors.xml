@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg">#191C1E</color>
     <color name="colorPrimary">#37F43F</color>
+    <color name="gaugeBG">#D2486C7A</color>
     <color name="deyacolor">#032B30</color>
 </resources>

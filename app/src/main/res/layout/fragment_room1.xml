@@ -15,7 +15,8 @@
         app:cpb_background_progressbar_color="#D2486C7A"
         app:cpb_background_progressbar_width="32dp"
         app:cpb_progress_direction="to_right"
-        app:cpb_progressbar_color="#FF03DAC5"
+        app:cpb_progressbar_color_start="#FF03DAC5"
+        app:cpb_progressbar_color_end="#FF5722"
         app:cpb_progressbar_width="20dp"
         app:cpb_round_border="true"
         app:cpb_start_angle="215"
@@ -61,7 +62,8 @@
         app:cpb_background_progressbar_color="#D2486C7A"
         app:cpb_background_progressbar_width="32dp"
         app:cpb_progress_direction="to_right"
-        app:cpb_progressbar_color="#FF03DAC5"
+        app:cpb_progressbar_color_start="#FF03DAC5"
+        app:cpb_progressbar_color_end="#FF5722"
         app:cpb_progressbar_width="20dp"
         app:cpb_round_border="true"
         app:cpb_start_angle="215"
@@ -100,12 +102,28 @@
         app:layout_constraintTop_toBottomOf="@+id/Room1Gauge2"
         app:layout_constraintVertical_bias="0.027" />
 
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="337dp"
+        android:layout_height="162dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/bg"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
     <ScrollView
-        android:layout_width="410dp"
-        android:layout_height="453dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="341dp"
         android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
@@ -114,11 +132,12 @@
             android:gravity="center"
             android:orientation="vertical">
 
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardViewRoom1"
                 android:layout_width="wrap_content"
                 android:layout_height="303dp"
-
+                android:elevation="20dp"
                 android:layout_margin="15dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
@@ -261,8 +280,8 @@
                 android:layout_margin="20dp"
                 android:layout_marginTop="30dp"
                 android:text="ON"
-                app:cornerRadius="25dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                app:cornerRadius="25dp" />
 
             <Button
                 android:id="@+id/Heater1"
@@ -270,8 +289,8 @@
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
-                app:cornerRadius="25dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                app:cornerRadius="25dp" />
 
             <Button
                 android:id="@+id/Humidifier1"
@@ -279,8 +298,8 @@
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
-                app:cornerRadius="20dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
 
             <Button
                 android:id="@+id/Dehumidifier1"
@@ -288,8 +307,8 @@
                 android:layout_height="70dp"
                 android:layout_margin="20dp"
                 android:text="ON"
-                app:cornerRadius="25dp"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                app:cornerRadius="25dp" />
 
         </LinearLayout>
     </ScrollView>
