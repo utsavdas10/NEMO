@@ -29,6 +29,7 @@
                 android:layout_height="72dp"
                 android:fontFamily="@font/changa_one"
                 android:text="@string/Heading"
+                android:gravity="center"
                 android:textColor="#F4E7E7"
                 android:textSize="60sp"
                 android:fadingEdge="horizontal"
